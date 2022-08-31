@@ -1,4 +1,9 @@
 #!/usr/bin/pythone3
 def number_keys(a_dictionary):
-    num_keys = len(a_dictionary)
-    return num_keys
+    num = 0
+    list_keys = list(a_dictionary.keys())
+
+    for i in list_keys:
+        num += 1
+
+    return (num)
