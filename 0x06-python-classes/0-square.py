@@ -2,6 +2,6 @@
 """This module defines an empty class Square"""
 
 
-class square:
+class Square:
     """This class defines a square that is empty"""
     pass
