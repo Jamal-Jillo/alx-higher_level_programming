@@ -14,4 +14,4 @@ def lookup(obj):
     Returns:
         _type_: _description_
     """
-    return (list(dir(lookup)))
+    return (dir(obj))
