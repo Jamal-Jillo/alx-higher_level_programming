@@ -20,4 +20,4 @@ def from_json_string(my_obj, filename):
     """
     with open(filename, 'w') as file:
         file.write(my_obj)
-    return json.loads(my_obj)
+    return json.dumps(my_obj)
