@@ -11,7 +11,7 @@ def append_write(filename="", text=""):
         text -- string (default: {""})
     """
     with open(filename, 'a') as file:
-        file.append(text)
+        file.write(text)
         count = 0
         for i in text:
             count += 1
