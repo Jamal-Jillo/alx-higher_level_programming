@@ -9,5 +9,5 @@ def read_file(filename=""):
     Keyword Arguments:
         filename -- name of the file to be read (default: {""})
     """
-    with open("filename", 'r', encoding="UTF8") as file:
-        file.read()
+    with open(filename, 'r') as file:
+        print(file.read(), end="")
