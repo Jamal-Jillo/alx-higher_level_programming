@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module that conts from_json_string
+""" Module that contains from_json_string
     Function
 """
 
@@ -20,4 +20,4 @@ def from_json_string(my_obj, filename):
     """
     with open(filename, 'w') as file:
         file.write(my_obj)
-    return json.dumps(my_obj)
+    return json.dump(my_obj)
