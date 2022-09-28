@@ -7,7 +7,7 @@
 import json
 
 
-def from_json_string(my_obj, filename):
+def save_to_json_file(my_obj, filename):
     """from_json_string Function that writes an object to
     a txt file using Json representation
 
@@ -19,5 +19,4 @@ def from_json_string(my_obj, filename):
         Json representation
     """
     with open(filename, 'w') as file:
-        file.write(my_obj)
-    return json.dump(my_obj)
+        json.dump(my_obj, file)
