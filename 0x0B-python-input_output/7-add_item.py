@@ -4,12 +4,39 @@
     and saves to a list
 """
 
+import json
 import sys
 
+
+def save_to_json_file(my_obj, filename):
+    """from_json_string Function that writes an object to
+    a txt file using Json representation
+
+    Arguments:
+        my_obj -- object
+        filename -- filename
+
+    Returns:
+        Json representation
+    """
+    with open(filename, 'w') as file:
+        json.dump(my_obj, file)
+
+
+def load_from_json_file(filename):
+    """load_from_json Loads an object from a Json
+    file
+
+    Arguments:
+        filename -- file name
+    """
+    with open(filename) as file:
+        return json.load(file)
+
+
 if __name__ == '__main__':
-    save_to_json_file = __import__('5-save_to_json_file'.save_to_json_file)
-    load_from_json_file = __import__('6-load_from_json_file'
-                                     .load_from_json_file)
+    # save_to_json_file = __import__('5-save_to_json_file')
+    # load_from_json_file = __import__('6-load_from_json_file')
 
     try:
         data = load_from_json_file('add_item.json')
