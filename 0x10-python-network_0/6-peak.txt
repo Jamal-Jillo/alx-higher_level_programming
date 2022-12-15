@@ -1,1 +1,2 @@
+# Complexity (n = number of nodes in the tree)
 O(n)
